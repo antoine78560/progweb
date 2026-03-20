@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Ptéranodon</title>
+    <meta charset="utf-8">
+    </head>
+    <body>
+    <h1> Le Ptéranodon </h1>
+    <p>Il ne faut pas oublier qu'il existe aussi les dinosaures qui appartiennent au ciel, notamment le Ptéranodon <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        
+    </body>
+    </html>
+    </p>
+    <img 
+     class="fit-picture"
+  src="pteranodon.jpg"
+   alt="Voici une photo du pteranodon " />
+    </body>
+    <li></li>
+    <a href="file:///C:/Users/Jeune/Documents/demo_site/Triceratops">
+            Tricératops
+        </a>
+        <li></li>
+         
+    <a href="file:///C:/Users/Jeune/Documents/demo_site/dinosaure">
+            Tyrannosaurus Rex
+        </a>
+    <p>Retour à <a href="file:///C:/Users/Jeune/Documents/demo_site/index.html">
+            l'accueil du site
+        </a></p>
+        <li></li>
+</html>

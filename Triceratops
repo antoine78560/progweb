@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Tricératops</title>
+    <meta charset="utf-8">
+    </head>
+    <body>
+    <h1> Le Tricératops </h1>
+    <p>Voici un exemple qui va tous vous parler l'un des dinosaures les plus connus et par ailleurs l'herbivore le plus connue au cotédu T-Rex, le légendaire Tricératops !
+    </p>
+    <img 
+     class="fit-picture"
+  src="triceratops.jpg"
+   alt="Voici une photo du Tricératops" />
+    </body>
+    
+    <li></li>
+    <a href="file:///C:/Users/Jeune/Documents/demo_site/dinosaure">
+            Tyrannosaurus Rex
+        </a>
+        <li></li>
+        <p><a href="file:///C:/Users/Jeune/Documents/demo_site/Pteranodon">
+            Ptéranodon
+        </a></p>
+        <li></li>
+        <p>Retour à <a href="file:///C:/Users/Jeune/Documents/demo_site/index.html">
+            l'accueil du site
+        </a></p>
+</html>

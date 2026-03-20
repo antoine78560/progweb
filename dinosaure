@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Tyrannosaurus Rex</title>
+    <meta charset="utf-8">
+    </head>
+    <body>
+    <h1> Le Tyrannosaurus Rex </h1>
+    <p>Voici un exemple qui va tous vous parler l'un des dinosaures les plus connus et l'un des plus gros carnivores que la Terre est connue le Tyrannosaurus Rex aussi appelé le T-Rex !
+    </p>
+    <img 
+     class="fit-picture"
+  src="trex.jpg"
+   alt="Voici une photo du Tyrannosaurus Rex" />
+    </body>
+    <li></li>
+    <a href="file:///C:/Users/Jeune/Documents/demo_site/Triceratops">
+            Tricératops
+        </a>
+        <li></li>
+        <p><a href="file:///C:/Users/Jeune/Documents/demo_site/Pteranodon">
+            Ptéranodon
+        </a></p>
+        
+        <li></li>
+    <p>Retour à <a href="file:///C:/Users/Jeune/Documents/demo_site/index.html">
+            l'accueil du site
+        </a></p>
+</html>
