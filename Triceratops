@@ -3,15 +3,19 @@
     <head>
     <title>Tricératops</title>
     <meta charset="utf-8">
+     <link rel="stylesheet" href="style.css">
     </head>
     <body>
     <h1> Le Tricératops </h1>
     <p>Voici un exemple qui va tous vous parler l'un des dinosaures les plus connus et par ailleurs l'herbivore le plus connue au cotédu T-Rex, le légendaire Tricératops !
     </p>
+    <figure>
     <img 
      class="fit-picture"
   src="triceratops.jpg"
    alt="Voici une photo du Tricératops" />
+   <figcaption> Tricératops </figcaption>
+    </figure>
     </body>
     
     <li></li>
@@ -26,4 +30,8 @@
         <p>Retour à <a href="file:///C:/Users/Jeune/Documents/demo_site/index.html">
             l'accueil du site
         </a></p>
+        <footer>
+    <p>© 2026 - Site sur les dinosaures</p>
+    <a href="contact.html">Contact</a>
+</footer>
 </html>
