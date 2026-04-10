@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>📩 Formulaire de contact</h1>
+
+<form method="GET" action="contact-resultat.php">
+
+    <!-- PSEUDO -->
+    <label>Pseudo *</label>
+    <input type="text" name="pseudo" required>
+
+    <!-- EMAIL -->
+    <label>Email *</label>
+    <input type="email" name="email" required>
+
+    <!-- CATEGORIES -->
+    <p>Catégories d’intérêt *</p>
+
+    <label><input type="checkbox" name="cat[]" value="carnivores" required> Carnivores</label>
+    <label><input type="checkbox" name="cat[]" value="herbivores"> Herbivores</label>
+    <label><input type="checkbox" name="cat[]" value="volants"> Ptérosaures</label>
+
+    <!-- NEWSLETTER -->
+    <p>Recevoir la newsletter ? *</p>
+
+    <label>
+        <input type="radio" name="newsletter" value="non" checked>
+        Non
+    </label>
+
+    <label>
+        <input type="radio" name="newsletter" value="oui">
+        Oui
+    </label>
+
+    <!-- FREQUENCE -->
+    <div id="frequence">
+        <label>Fréquence</label>
+        <select name="frequence">
+            <option value="quotidien">Quotidien</option>
+            <option value="hebdo">Hebdomadaire</option>
+            <option value="mensuel">Mensuelle</option>
+        </select>
+    </div>
+
+    <button type="submit">Envoyer</button>
+
+</form>
+
+<script src="script.js"></script>
+
+</body>
+</html>

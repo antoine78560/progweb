@@ -1,74 +1,81 @@
 <!DOCTYPE html>
-<html>
-    <head>
-    <title>Les Dinosaures, les créatures avant l'Homme.</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
-    </head>
-<h1> Les Dinosaures </h1>
+<html lang="fr">
 
-    <body>
-        <p>
-            L'Homme est apparru sur Terre il y a environ 3 Millions d'années mais avant leur apparition existait encore des créatures qui régnaient en maître sur la planète.
-            Il s'agit des Dinosaures !
-        </p>
-        <li>
-        <a href="file:///C:/Users/Jeune/Documents/demo_site/dinosaure">
-            Tyrannosaurus Rex
-        </a>
-        </li>
-        <li>
-        <a href="file:///C:/Users/Jeune/Documents/demo_site/Triceratops">
-            Tricératops
-        </a>
-        </li>
-        <li>
-        <a href="file:///C:/Users/Jeune/Documents/demo_site/Pteranodon">
-            Ptéranodon
-        </a>
-        </li>
-    </body>
-<h2>L'Extinction des dinosaures</h2>
-    <body>Comme vous le savez certainement, les dinosaures se sont éteint à cause d'une météorite qui a chuté sur notre planète Terre.
-    <br>Voici, une courte vidéo présentant ce grand évenement qui changea à jamais le cours de l'histoire de la planète.
-
-    <p><video controls width="400"> <source src="video/meteorite.mp4" type="video/mp4">
-    </body>
-    <!DOCTYPE html>
-<html>
 <head>
     <meta charset="utf-8">
-    <title>Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Dinosaures</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<h1>Contact</h1>
+<header>
+    <h1>🦖 Les Dinosaures</h1>
+    <p>Les créatures qui dominaient la Terre avant l’Homme</p>
+</header>
 
-<form>
-    <label>Pseudo :</label><br>
-    <input type="text" name="pseudo"><br><br>
+<main>
 
-    <label>Email :</label><br>
-    <input type="email" name="email"><br><br>
+    <!-- INTRO -->
+    <section>
+        <p>
+            L’Homme est apparu sur Terre il y a environ 3 millions d’années, mais bien avant cela,
+            des créatures impressionnantes régnaient sur la planète : les dinosaures !
+        </p>
+    </section>
 
-    <label>Recevoir la newsletter ?</label><br>
-    <input type="checkbox"> Oui<br><br>
+    <!-- NAVIGATION DINOS -->
+    <section class="container">
 
-    <label>Fréquence :</label><br>
-    <select>
-        <option>Hebdomadaire</option>
-        <option>Mensuelle</option>
-    </select><br><br>
+        <div class="card">
+            <h2>T-Rex</h2>
+            <a href="dinosaure.html">Découvrir</a>
+        </div>
 
-    <button type="submit">Envoyer</button>
-</form>
+        <div class="card">
+            <h2>Tricératops</h2>
+            <a href="Triceratops.html">Découvrir</a>
+        </div>
+
+        <div class="card">
+            <h2>Ptéranodon</h2>
+            <a href="Pteranodon.html">Découvrir</a>
+        </div>
+
+    </section>
+
+    <!-- VIDEO -->
+    <section class="video">
+        <h2>☄️ L'extinction des dinosaures</h2>
+
+        <p>
+            Comme vous le savez, les dinosaures se sont éteints à cause d’une météorite.
+            Voici une courte vidéo expliquant cet événement.
+        </p>
+
+        <video controls>
+            <source src="video/meteorite.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <h3> QUIZ </h3>
+
+    <p id="question"></p>
+
+<p id="result"></p>
+
+<div id="buttons">
+    <button onclick="answer(true)">Vrai</button>
+    <button onclick="answer(false)">Faux</button>
+</div>
+<script src="script.js"></script>
+</main>
+
 <footer>
     <p>© 2026 - Site sur les dinosaures</p>
     <a href="contact.html">Contact</a>
 </footer>
 
 </body>
-
 </html>

@@ -1,98 +1,214 @@
 
-*{
+/* ================= RESET ================= */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
+/* ================= BODY ================= */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
+    color: white;
+
+    background:
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)),
+        url("images/background.jpg") no-repeat center/cover;
+
+    background-attachment: fixed;
+}
+
+/* ================= HEADER ================= */
+header {
+    text-align: center;
+    padding: 30px;
+    background: rgba(0,0,0,0.7);
+}
+
+header h1 {
+    font-size: 40px;
+    text-shadow: 0 0 10px lime;
+}
+
+header p {
+    margin-top: 10px;
+}
+
+/* ================= TEXTE ================= */
+p {
+    padding: 15px;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* ================= FLEXBOX ================= */
+.container {
+    display: flex;
+    flex-direction: column; /* mobile */
+    align-items: center;
     padding: 20px;
 }
 
-
-h1 {
+/* ================= CARDS ================= */
+.card {
+    background: rgba(0,0,0,0.7);
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    margin: 15px;
+    border-radius: 15px;
+    width: 90%;
     text-align: center;
-    color: #2c3e50;
-    margin-bottom: 20px;
+    transition: 0.3s;
 }
 
-h2 {
-    text-align:center;
-    margin-top: 40px;
-    color: #34495e;
+.card:hover {
+    transform: scale(1.05);
 }
 
-
-p {
-    margin-bottom: 15px;
-    font-size: 18px;
+/* ================= IMAGES ================= */
+img {
+    width: 100%;
+    border-radius: 10px;
+    border: 3px solid white;
 }
 
-
+/* ================= LIENS ================= */
 a {
-    display: block;
-    margin: 10px 0;
     text-decoration: none;
     color: white;
-    background-color: #27ae60;
-    padding: 10px;
-    border-radius: 5px;
-    width: fit-content;
+    background: linear-gradient(45deg, green, darkgreen);
+    padding: 10px 15px;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 10px;
     transition: 0.3s;
 }
 
 a:hover {
-    background-color: #219150;
+    background: limegreen;
+    box-shadow: 0 0 15px lime;
 }
 
+/* ================= NAVIGATION ================= */
+.navigation ul {
+    list-style: none;
+    text-align: center;
+    padding: 20px;
+}
+
+.navigation li {
+    margin: 10px 0;
+}
+
+/* ================= VIDEO ================= */
+.video {
+    text-align: center;
+    margin: 40px;
+}
 
 video {
-    display: block;
-    margin: 20px auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    width: 90%;
+    max-width: 600px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px black;
 }
 
+/* ================= AUDIO ================= */
+.audio {
+    text-align: center;
+    margin: 30px;
+}
+
+.audio a {
+    background: darkred;
+}
+
+.audio a:hover {
+    background: red;
+}
+
+/* ================= FORMULAIRE ================= */
 form {
-    background-color: white;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 10px;
-    width: 300px;
+    background: rgba(0,0,0,0.8);
+    padding: 25px;
+    margin: 30px auto;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 400px;
 }
 
 input, select, button {
     width: 100%;
-    padding: 8px;
-    margin-top: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
 }
 
 button {
-    background-color: green;
+    background: green;
     color: white;
-    border: none;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: darkgreen;
+    background: limegreen;
 }
 
+/* ================= FOOTER ================= */
 footer {
-    background-color: #333;
-    color: white;
+    background: rgba(0,0,0,0.8);
     text-align: center;
     padding: 15px;
     margin-top: 40px;
 }
 
-footer a {
-    text align:center;
-    color: lightgreen;
-    text-decoration: none;
+/* ================= RESPONSIVE ================= */
+
+/* TABLETTE → 2 colonnes */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card {
+        width: 45%;
+    }
 }
+
+/* ORDI → 3 colonnes */
+@media (min-width: 1024px) {
+    .card {
+        width: 30%;
+    }
+}
+
+body {
+    font-family: Arial;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)),
+                url("images/background.jpg");
+    background-size: cover;
+    color: white;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#buttons button:nth-child(1) {
+    background: green;
+    color: white;
+}
+
+#buttons button:nth-child(2) {
+    background: red;
+    color: white;
+}
+
