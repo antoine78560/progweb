@@ -212,3 +212,23 @@ button {
     color: white;
 }
 
+#frequence {
+    margin-top: 10px;
+    padding: 10px;
+    background: rgba(0,0,0,0.5);
+    border-radius: 10px;
+    display: none;
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+    background: rgba(0,0,0,0.7);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
