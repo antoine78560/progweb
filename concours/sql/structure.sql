@@ -1,3 +1,10 @@
 CREATE DATABASE concours
 DEFAULT CHARACTER SET utf8mb4 
 COLLATE utf8mb4_unicode_ci ;
+
+CREATE TABLE question (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    texte VARCHAR(255) NOT NULL,
+    reponse BOOLEAN NOT NULL,
+    points INT NOT NULL
+);
