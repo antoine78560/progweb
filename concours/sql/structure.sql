@@ -29,3 +29,16 @@ ON concours.*
 TO 'nika'@'localhost';
 
 SHOW GRANTS FOR 'nika'@'localhost';
+
+CREATE TABLE joueur (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    pseudo VARCHAR(50) UNIQUE NOT NULL,
+    code CHAR(6) UNIQUE NOT NULL
+);
+
+INSERT INTO joueur (pseudo, code) VALUES
+('Alice', 'A1B2C3'),
+('Bob', 'Z9Y8X7'),
+('Charlie', 'QW12ER'),
+('David', 'MN34OP'),
+('Emma', 'ZXCV12');
