@@ -1,4 +1,9 @@
 <?php require_once 'outils.php'; ?>
+<?php $stmt = $db->query("SELECT * FROM question");
+
+foreach ($stmt as $q) {
+    echo $q['id']." - ".$q['texte']." - ".$q['points']." pts<br>";
+} ?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
