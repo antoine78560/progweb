@@ -42,3 +42,10 @@ INSERT INTO joueur (pseudo, code) VALUES
 ('Charlie', 'QW12ER'),
 ('David', 'MN34OP'),
 ('Emma', 'ZXCV12');
+
+CREATE TABLE partie (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    joueur_id INT,
+    score INT NOT NULL,
+    FOREIGN KEY (joueur_id) REFERENCES joueur(id)
+);
