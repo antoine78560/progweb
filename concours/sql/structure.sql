@@ -23,3 +23,9 @@ INSERT INTO question (texte, reponse, points) VALUES
 
 CREATE USER 'nika'@'localhost'
 IDENTIFIED BY 'gomu';
+
+GRANT ALL PRIVILEGES
+ON concours.*
+TO 'nika'@'localhost';
+
+SHOW GRANTS FOR 'nika'@'localhost';
