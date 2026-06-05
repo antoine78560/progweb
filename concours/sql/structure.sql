@@ -20,3 +20,6 @@ INSERT INTO question (texte, reponse, points) VALUES
 ('Un octet est compose de 8 bits.', 1, 80),
 ('La vitesse de la lumiere dans le vide est superieure a 300000 km/s.', 0, 90),
 ('En SQL, une cle etrangere garantit l''integrite referentielle entre deux tables.', 1, 100);
+
+CREATE USER 'nika'@'localhost'
+IDENTIFIED BY 'gomu';
