@@ -11,5 +11,6 @@
 
     <p>Bienvenue sur notre jeu de questions.</p>
 
+    <a href="hasard.php">Une question au hasard</a>
 </body>
 </html>
